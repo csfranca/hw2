@@ -376,7 +376,7 @@ movies.each do |movie|
   studio_name = Studio.find(movie.studio_id).name
 
   # Print movie name, release year, rating, and production company
-  puts "#{movie.title} #{movie.year_released} #{movie.rated} #{studio_name}"
+  puts "-- #{movie.title} #{movie.year_released} #{movie.rated} #{studio_name}"
 end
 
 # Prints a header for the cast output
@@ -388,10 +388,11 @@ puts ""
 # Query the cast data and loop through the results to display the cast output for each movie.
 # TODO!
 
-# Define array of movie objects
-movies = [batman_begins, dark_knight, knight_rises]
+cast_by_movie = Role.all
 
-# Loop through each movie object in the array
-movies.each do |movie|
-  # Retrieve the actor name by joining the movies and actor tables
-  studio_name = Studio.find(movie.studio_id).name
+for actor in cast_by_movie
+  movie_title = Movie.find_by({"id" => actor["movie_id"]})["title"]
+  actor_name = Actor.find_by({"id" => actor["actor_id"]})["name"]
+  character_name = actor["character_name"]
+  puts "-- #{movie_title} #{actor_name} #{character_name}"
+end
