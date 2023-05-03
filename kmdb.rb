@@ -86,6 +86,179 @@ Role.destroy_all
 # Do not use hard-coded foreign key IDs.
 # TODO!
 
+#Studio
+studio1 = Studio.new
+
+studio1["name"] = "Warner Bros."
+studio1.save # insert into table
+
+puts studio1.inspect
+
+#Movie
+warner = Studio.find_by({ "name" => "Warner Bros." })
+
+movie1 = Movie.new
+
+movie1["title"] = "Batman Begins"
+movie1["year_released"] = 2005
+movie1["rated"] = "PG-13"
+movie1["studio_id"] = warner["id"]
+movie1.save # insert into table
+
+puts movie1.inspect
+
+movie2 = Movie.new
+
+movie2["title"] = "The Dark Knight"
+movie2["year_released"] = 2008
+movie2["rated"] = "PG-13"
+movie2["studio_id"] = warner["id"]
+movie2.save # insert into table
+
+puts movie2.inspect
+
+movie3 = Movie.new
+
+movie3["title"] = "The Dark Knight Rises"
+movie3["year_released"] = 2012
+movie3["rated"] = "PG-13"
+movie3["studio_id"] = warner["id"]
+movie3.save # insert into table
+
+puts movie3.inspect
+
+#Actors
+actor1 = Actor.new
+
+actor1["name"] = "Christian Bale"
+actor1.save # insert into table
+
+puts actor1.inspect
+
+actor2 = Actor.new
+
+actor2["name"] = "Michael Caine"
+actor2.save # insert into table
+
+puts actor2.inspect
+
+actor3 = Actor.new
+
+actor3["name"] = "Liam Neeson"
+actor3.save # insert into table
+
+puts actor3.inspect
+
+actor4 = Actor.new
+
+actor4["name"] = "Katie Holmes"
+actor4.save # insert into table
+
+puts actor4.inspect
+
+actor5 = Actor.new
+
+actor5["name"] = "Gary Oldman"
+actor5.save # insert into table
+
+puts actor5.inspect
+
+actor6 = Actor.new
+
+actor6["name"] = "Heath Ledger"
+actor6.save # insert into table
+
+puts actor6.inspect
+
+actor7 = Actor.new
+
+actor7["name"] = "Aaron Eckhart"
+actor7.save # insert into table
+
+puts actor7.inspect
+
+actor8 = Actor.new
+
+actor8["name"] = "Maggie Gyllenhaal"
+actor8.save # insert into table
+
+puts actor8.inspect
+
+actor9 = Actor.new
+
+actor9["name"] = "Tom Hardy"
+actor9.save # insert into table
+
+puts actor9.inspect
+
+actor10 = Actor.new
+
+actor10["name"] = "Joseph Gordon-Levitt"
+actor10.save # insert into table
+
+puts actor10.inspect
+
+actor11 = Actor.new
+
+actor11["name"] = "Anne Hathaway"
+actor11.save # insert into table
+
+puts actor11.inspect
+
+#Roles
+batman_begins = Movie.find_by({ "title" => "Batman Begins" })
+christianb = Actor.find_by({ "name" => "Christian Bale" })
+michaelc = Actor.find_by({ "name" => "Michael Caine" })
+liamn = Actor.find_by({ "name" => "Liam Neeson" })
+katieh = Actor.find_by({ "name" => "Katie Holmes" })
+garyo = Actor.find_by({ "name" => "Gary Oldman" })
+
+role1 = Role.new
+
+role1["movie_id"] = batman_begins["id"]
+role1["actor_id"] = christianb["id"]
+role1["character_name"] = "Bruce Wayne"
+role1.save # insert into table
+
+puts role1.inspect
+
+role2 = Role.new
+
+role2["movie_id"] = batman_begins["id"]
+role2["actor_id"] = michaelc["id"]
+role2["character_name"] = "Alfred"
+role2.save # insert into table
+
+puts role2.inspect
+
+role3 = Role.new
+
+role3["movie_id"] = batman_begins["id"]
+role3["actor_id"] = liamn["id"]
+role3["character_name"] = "Ra's Al Ghul"
+role3.save # insert into table
+
+puts role3.inspect
+
+role4 = Role.new
+
+role4["movie_id"] = batman_begins["id"]
+role4["actor_id"] = katieh["id"]
+role4["character_name"] = "Rachel Dawes"
+role4.save # insert into table
+
+puts role4.inspect
+
+role5 = Role.new
+
+role5["movie_id"] = batman_begins["id"]
+role5["actor_id"] = garyo["id"]
+role5["character_name"] = "Commissioner Gordon"
+role5.save # insert into table
+
+puts role5.inspect
+
+
 # Prints a header for the movies output
 puts "Movies"
 puts "======"
