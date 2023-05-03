@@ -213,6 +213,16 @@ liamn = Actor.find_by({ "name" => "Liam Neeson" })
 katieh = Actor.find_by({ "name" => "Katie Holmes" })
 garyo = Actor.find_by({ "name" => "Gary Oldman" })
 
+dark_knight = Movie.find_by({ "title" => "The Dark Knight" })
+heathl = Actor.find_by({ "name" => "Heath Ledger" })
+aarone = Actor.find_by({ "name" => "Aaron Eckhart" })
+maggieg = Actor.find_by({ "name" => "Maggie Gyllenhaal" })
+
+knight_rises = Movie.find_by({ "title" => "The Dark Knight Rises" })
+tomh = Actor.find_by({ "name" => "Tom Hardy" })
+josephg = Actor.find_by({ "name" => "Joseph Gordon-Levitt" })
+anneh = Actor.find_by({ "name" => "Anne Hathaway" })
+
 role1 = Role.new
 
 role1["movie_id"] = batman_begins["id"]
@@ -257,6 +267,96 @@ role5["character_name"] = "Commissioner Gordon"
 role5.save # insert into table
 
 puts role5.inspect
+
+role6 = Role.new
+
+role6["movie_id"] = dark_knight["id"]
+role6["actor_id"] = christianb["id"]
+role6["character_name"] = "Bruce Wayne"
+role6.save # insert into table
+
+puts role6.inspect
+
+role7 = Role.new
+
+role7["movie_id"] = dark_knight["id"]
+role7["actor_id"] = heathl["id"]
+role7["character_name"] = "Joker"
+role7.save # insert into table
+
+puts role7.inspect
+
+role8 = Role.new
+
+role8["movie_id"] = dark_knight["id"]
+role8["actor_id"] = aarone["id"]
+role8["character_name"] = "Harvey Dent"
+role8.save # insert into table
+
+puts role8.inspect
+
+role9 = Role.new
+
+role9["movie_id"] = dark_knight["id"]
+role9["actor_id"] = michaelc["id"]
+role9["character_name"] = "Alfred"
+role9.save # insert into table
+
+puts role9.inspect
+
+role10 = Role.new
+
+role10["movie_id"] = dark_knight["id"]
+role10["actor_id"] = maggieg["id"]
+role10["character_name"] = "Rachel Dawes"
+role10.save # insert into table
+
+puts role10.inspect
+
+role11 = Role.new
+
+role11["movie_id"] = knight_rises["id"]
+role11["actor_id"] = christianb["id"]
+role11["character_name"] = "Bruce Wayne"
+role11.save # insert into table
+
+puts role11.inspect
+
+role12 = Role.new
+
+role12["movie_id"] = knight_rises["id"]
+role12["actor_id"] = garyo["id"]
+role12["character_name"] = "Commissioner Gordon"
+role12.save # insert into table
+
+puts role12.inspect
+
+role13 = Role.new
+
+role13["movie_id"] = knight_rises["id"]
+role13["actor_id"] = tomh["id"]
+role13["character_name"] = "Bane"
+role13.save # insert into table
+
+puts role13.inspect
+
+role14 = Role.new
+
+role14["movie_id"] = knight_rises["id"]
+role14["actor_id"] = josephg["id"]
+role14["character_name"] = "John Blake"
+role14.save # insert into table
+
+puts role14.inspect
+
+role15 = Role.new
+
+role15["movie_id"] = knight_rises["id"]
+role15["actor_id"] = anneh["id"]
+role15["character_name"] = "Selina Kyle"
+role15.save # insert into table
+
+puts role15.inspect
 
 
 # Prints a header for the movies output
