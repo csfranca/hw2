@@ -92,7 +92,7 @@ studio1 = Studio.new
 studio1["name"] = "Warner Bros."
 studio1.save # insert into table
 
-puts studio1.inspect
+#puts studio1.inspect
 
 #Movie
 warner = Studio.find_by({ "name" => "Warner Bros." })
@@ -105,7 +105,7 @@ movie1["rated"] = "PG-13"
 movie1["studio_id"] = warner["id"]
 movie1.save # insert into table
 
-puts movie1.inspect
+#puts movie1.inspect
 
 movie2 = Movie.new
 
@@ -115,7 +115,7 @@ movie2["rated"] = "PG-13"
 movie2["studio_id"] = warner["id"]
 movie2.save # insert into table
 
-puts movie2.inspect
+#puts movie2.inspect
 
 movie3 = Movie.new
 
@@ -125,7 +125,7 @@ movie3["rated"] = "PG-13"
 movie3["studio_id"] = warner["id"]
 movie3.save # insert into table
 
-puts movie3.inspect
+#puts movie3.inspect
 
 #Actors
 actor1 = Actor.new
@@ -133,77 +133,77 @@ actor1 = Actor.new
 actor1["name"] = "Christian Bale"
 actor1.save # insert into table
 
-puts actor1.inspect
+#puts actor1.inspect
 
 actor2 = Actor.new
 
 actor2["name"] = "Michael Caine"
 actor2.save # insert into table
 
-puts actor2.inspect
+#puts actor2.inspect
 
 actor3 = Actor.new
 
 actor3["name"] = "Liam Neeson"
 actor3.save # insert into table
 
-puts actor3.inspect
+#puts actor3.inspect
 
 actor4 = Actor.new
 
 actor4["name"] = "Katie Holmes"
 actor4.save # insert into table
 
-puts actor4.inspect
+#puts actor4.inspect
 
 actor5 = Actor.new
 
 actor5["name"] = "Gary Oldman"
 actor5.save # insert into table
 
-puts actor5.inspect
+#puts actor5.inspect
 
 actor6 = Actor.new
 
 actor6["name"] = "Heath Ledger"
 actor6.save # insert into table
 
-puts actor6.inspect
+#puts actor6.inspect
 
 actor7 = Actor.new
 
 actor7["name"] = "Aaron Eckhart"
 actor7.save # insert into table
 
-puts actor7.inspect
+#puts actor7.inspect
 
 actor8 = Actor.new
 
 actor8["name"] = "Maggie Gyllenhaal"
 actor8.save # insert into table
 
-puts actor8.inspect
+#puts actor8.inspect
 
 actor9 = Actor.new
 
 actor9["name"] = "Tom Hardy"
 actor9.save # insert into table
 
-puts actor9.inspect
+#puts actor9.inspect
 
 actor10 = Actor.new
 
 actor10["name"] = "Joseph Gordon-Levitt"
 actor10.save # insert into table
 
-puts actor10.inspect
+#puts actor10.inspect
 
 actor11 = Actor.new
 
 actor11["name"] = "Anne Hathaway"
 actor11.save # insert into table
 
-puts actor11.inspect
+#puts actor11.inspect
 
 #Roles
 batman_begins = Movie.find_by({ "title" => "Batman Begins" })
@@ -230,7 +230,7 @@ role1["actor_id"] = christianb["id"]
 role1["character_name"] = "Bruce Wayne"
 role1.save # insert into table
 
-puts role1.inspect
+#puts role1.inspect
 
 role2 = Role.new
 
@@ -239,7 +239,7 @@ role2["actor_id"] = michaelc["id"]
 role2["character_name"] = "Alfred"
 role2.save # insert into table
 
-puts role2.inspect
+#puts role2.inspect
 
 role3 = Role.new
 
@@ -248,7 +248,7 @@ role3["actor_id"] = liamn["id"]
 role3["character_name"] = "Ra's Al Ghul"
 role3.save # insert into table
 
-puts role3.inspect
+#puts role3.inspect
 
 role4 = Role.new
 
@@ -257,7 +257,7 @@ role4["actor_id"] = katieh["id"]
 role4["character_name"] = "Rachel Dawes"
 role4.save # insert into table
 
-puts role4.inspect
+#puts role4.inspect
 
 role5 = Role.new
 
@@ -266,7 +266,7 @@ role5["actor_id"] = garyo["id"]
 role5["character_name"] = "Commissioner Gordon"
 role5.save # insert into table
 
-puts role5.inspect
+#puts role5.inspect
 
 role6 = Role.new
 
@@ -275,7 +275,7 @@ role6["actor_id"] = christianb["id"]
 role6["character_name"] = "Bruce Wayne"
 role6.save # insert into table
 
-puts role6.inspect
+#puts role6.inspect
 
 role7 = Role.new
 
@@ -284,7 +284,7 @@ role7["actor_id"] = heathl["id"]
 role7["character_name"] = "Joker"
 role7.save # insert into table
 
-puts role7.inspect
+#puts role7.inspect
 
 role8 = Role.new
 
@@ -293,7 +293,7 @@ role8["actor_id"] = aarone["id"]
 role8["character_name"] = "Harvey Dent"
 role8.save # insert into table
 
-puts role8.inspect
+#puts role8.inspect
 
 role9 = Role.new
 
@@ -302,7 +302,7 @@ role9["actor_id"] = michaelc["id"]
 role9["character_name"] = "Alfred"
 role9.save # insert into table
 
-puts role9.inspect
+#puts role9.inspect
 
 role10 = Role.new
 
@@ -311,7 +311,7 @@ role10["actor_id"] = maggieg["id"]
 role10["character_name"] = "Rachel Dawes"
 role10.save # insert into table
 
-puts role10.inspect
+#puts role10.inspect
 
 role11 = Role.new
 
@@ -320,7 +320,7 @@ role11["actor_id"] = christianb["id"]
 role11["character_name"] = "Bruce Wayne"
 role11.save # insert into table
 
-puts role11.inspect
+#puts role11.inspect
 
 role12 = Role.new
 
@@ -329,7 +329,7 @@ role12["actor_id"] = garyo["id"]
 role12["character_name"] = "Commissioner Gordon"
 role12.save # insert into table
 
-puts role12.inspect
+#puts role12.inspect
 
 role13 = Role.new
 
@@ -338,7 +338,7 @@ role13["actor_id"] = tomh["id"]
 role13["character_name"] = "Bane"
 role13.save # insert into table
 
-puts role13.inspect
+#puts role13.inspect
 
 role14 = Role.new
 
@@ -347,7 +347,7 @@ role14["actor_id"] = josephg["id"]
 role14["character_name"] = "John Blake"
 role14.save # insert into table
 
-puts role14.inspect
+#puts role14.inspect
 
 role15 = Role.new
 
@@ -356,7 +356,7 @@ role15["actor_id"] = anneh["id"]
 role15["character_name"] = "Selina Kyle"
 role15.save # insert into table
 
-puts role15.inspect
+#puts role15.inspect
 
 
 # Prints a header for the movies output
@@ -367,6 +367,18 @@ puts ""
 # Query the movies data and loop through the results to display the movies output.
 # TODO!
 
+# Define array of movie objects
+movies = [batman_begins, dark_knight, knight_rises]
+
+# Loop through each movie object in the array
+movies.each do |movie|
+  # Retrieve the studio name by joining the movies and studios tables
+  studio_name = Studio.find(movie.studio_id).name
+
+  # Print movie name, release year, rating, and production company
+  puts "#{movie.title} #{movie.year_released} #{movie.rated} #{studio_name}"
+end
+
 # Prints a header for the cast output
 puts ""
 puts "Top Cast"
@@ -375,3 +387,11 @@ puts ""
 
 # Query the cast data and loop through the results to display the cast output for each movie.
 # TODO!
+
+# Define array of movie objects
+movies = [batman_begins, dark_knight, knight_rises]
+
+# Loop through each movie object in the array
+movies.each do |movie|
+  # Retrieve the actor name by joining the movies and actor tables
+  studio_name = Studio.find(movie.studio_id).name
