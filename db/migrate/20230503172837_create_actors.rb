@@ -1,6 +1,6 @@
-class CreateStudios < ActiveRecord::Migration[7.0]
+class CreateActors < ActiveRecord::Migration[7.0]
   def change
-    create_table :studios do |t|
+    create_table :actors do |t|
       # t.integer "id" > is created automatically
       t.string "name"
       
